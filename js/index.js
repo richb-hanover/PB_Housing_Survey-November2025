@@ -142,6 +142,7 @@ function pieChart(ary, prop, textLabels, qID) {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
     },
   });
 }
