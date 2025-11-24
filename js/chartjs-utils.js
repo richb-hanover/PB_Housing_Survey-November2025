@@ -39,8 +39,8 @@ export function makeChart(id, type, labels, data) {
       responsive: true,
       plugins: {
         legend: {
-          position: "right", // key line
-          align: "center", // optional: top|center|bottom
+          position: "right",
+          align: "center",
           labels: {
             boxWidth: 20,
           },
@@ -59,7 +59,7 @@ export function makeChart(id, type, labels, data) {
         },
       },
       layout: {
-        padding: 10, // optional to give breathing room
+        padding: 10,
       },
     },
   });

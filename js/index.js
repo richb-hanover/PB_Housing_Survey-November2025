@@ -247,6 +247,7 @@ import { makeChart } from "./chartjs-utils.js";
 /**
  * Beginning of main routine
  */
+console.log(`Chart version: ${Chart.version}`);
 
 // copy the questions array to the respective <h3>'s
 let id = "";

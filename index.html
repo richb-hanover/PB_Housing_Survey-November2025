@@ -112,15 +112,15 @@
 
     <!-- JavaScript - supplied by ChatGPT for things that work with Bootstrap 4 & MDBootstrap -->
 
-    <!-- jQuery -->
+    <!-- jQuery 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <!-- jQuery Easing (required by MDB 4.4.5) -->
+    <!-- jQuery Easing (required by MDB 4.4.5) 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-    <!-- Popper (Bootstrap 4 dependency) -->
+    <!-- Popper (Bootstrap 4 dependency) 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-
+    -->
     <!-- Bootstrap 4 -->
     <link
       rel="stylesheet"
@@ -135,14 +135,15 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
     -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script type="text/javascript" src="Survey-feedback.js"></script>
     <script type="text/javascript" src="LCDC-questions.js"></script>
-
-    <!-- Chart.js (global Chart for modules) -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+    <script>
+      Chart.register(ChartDataLabels);
+    </script>
 
     <script type="module">
       async function loadTabPartials() {
