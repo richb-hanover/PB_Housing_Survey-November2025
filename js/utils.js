@@ -58,6 +58,59 @@ export function tableize(ary, prop, qID) {
 }
 
 /**
+ * summarizeResponseArray() - given the array of response objects,
+ *    summarize the particular field's results and return
+ *    two arrays: the labels, and the corresponding counts
+ * @param array of responses
+ * @param field - the property to examine
+ * @returns array of labels, array of counts
+ */
+
+export function summarizeResponseArray(responses, field) {
+  let labels = [];
+  // if (!Array.isArray(responses)) return[ [],[]];
+
+  responses.forEach((item) => {
+    // normalize missing/null/empty to "N/A"
+    let val; // val becomes the new prop
+    if (!item || !(field in item)) {
+      val = "N/A";
+    } else {
+      val = item[field];
+      if (val === null || val === "") {
+        val = "N/A";
+      } else if (typeof val === "string") {
+        val = val.trim();
+      }
+    }
+
+    labels.push(val);
+  });
+  return uniqueLabelsAndCounts(labels);
+}
+
+/**
+ * uniqueLabelsAndCounts()
+ * @param  values  - an array of strings
+ * @returns [unique labels], [their counts]
+ */
+export function uniqueLabelsAndCounts(values) {
+  const frequency = new Map();
+  values.forEach((value) => {
+    frequency.set(value, (frequency.get(value) || 0) + 1);
+  });
+
+  const uniques = [];
+  const counts = [];
+  frequency.forEach((count, value) => {
+    uniques.push(value);
+    counts.push(count);
+  });
+
+  return [uniques, counts];
+}
+
+/**
  * countResponses
  * @param accum
  * @param x

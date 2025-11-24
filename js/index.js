@@ -12,6 +12,7 @@ import {
   cleanText,
   formatScale,
   formatIndividualResponse,
+  summarizeResponseArray,
 } from "./utils.js";
 import { makeChart } from "./chartjs-utils.js";
 // /**
@@ -254,20 +255,12 @@ for (let i = 1; i <= 10; i++) {
   document.getElementById(id).innerHTML = questions[i];
 }
 
-makeChart(
-  "r1",
-  "pie",
-
-  "1. Rate of increase",
-  [
-    "2 new units/year",
-    "4 new units/year",
-    "6 new units/year",
-    "8 new units/year",
-    "10 new units/year",
-  ],
-  responses
+let [labels, counts] = summarizeResponseArray(responses, "1. Rate of increase");
+console.log(
+  `Q1 responses: ${JSON.stringify(labels)} ${JSON.stringify(counts)}`
 );
+
+makeChart("r1", "pie", labels, counts);
 pieChart(responses, "View", ["2 new units/year", "No"], "2");
 barChart(
   responses,

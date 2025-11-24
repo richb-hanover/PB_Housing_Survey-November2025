@@ -89,227 +89,24 @@
           id="home"
           role="tabpanel"
           aria-labelledby="home-tab"
-        >
-          <p></p>
-          <div>
-            <!-- #1 -->
-            <h3 id="q1"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct1"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10" style="width: 250px; height: 250px">
-              <canvas id="r1"></canvas>
-              <!-- Responses to Q1  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <!-- #2 -->
-            <h3 id="q2"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct2"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10" style="width: 250px; height: 250px">
-              <canvas id="r2"></canvas>
-              <!-- Responses to Q2  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <!-- #3 -->
-            <h3 id="q3"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct3"></span> answers)</i></small
-              >
-            </p>
-            <div class="col"></div>
-            <div class="col-10 table-wrapper-scroll-y my-custom-scrollbar">
-              <table
-                id="r3"
-                class="table table-bordered table-striped mb-0"
-              ></table>
-              <!-- Responses to Q3  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q4"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct4"></span> answers)</i></small
-              >
-            </p>
-            <div class="col"></div>
-            <div class="col-10 table-wrapper-scroll-y my-custom-scrollbar">
-              <table
-                id="r4"
-                class="table table-bordered table-striped mb-0"
-              ></table>
-              <!-- Responses to Q4  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q5"></h3>
-            <!-- Question 5 -->
-            <p>
-              <small
-                ><i>(<span id="ct5"></span> answers)</i></small
-              >
-            </p>
-            <div class="col"></div>
-            <div class="col-10 table-wrapper-scroll-y my-custom-scrollbar">
-              <table
-                id="r5"
-                class="table table-bordered table-striped mb-0"
-              ></table>
-              <!-- Responses to Q5  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q6"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct6"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10">
-              <canvas id="r6" style="max-width: 500px"></canvas>
-              <!-- Responses to Q6  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q7"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct7"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10">
-              <canvas id="r7" style="max-width: 500px"></canvas>
-              <!-- Responses to Q7  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q8"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct8"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10">
-              <canvas id="r8" style="max-width: 500px"></canvas>
-              <!-- Responses to Q8  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q9"></h3>
-            <!-- Question -->
-            <p>
-              <small
-                ><i>(<span id="ct9"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10 table-wrapper-scroll-y my-custom-scrollbar">
-              <table
-                id="r9"
-                class="table table-bordered table-striped mb-0"
-              ></table>
-              <!-- Responses to Q9  -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-
-          <div>
-            <h3 id="q10"></h3>
-            <p>
-              <small
-                ><i>(<span id="ct10"></span> answers)</i></small
-              >
-            </p>
-            <div class="col">&nbsp;</div>
-            <div class="col-10 table-wrapper-scroll-y my-custom-scrollbar">
-              <table
-                id="r10"
-                class="table table-bordered table-striped mb-0"
-              ></table>
-              <!-- Responses to Q10 -->
-            </div>
-            <div class="col">&nbsp;</div>
-          </div>
-        </div>
+          data-partial="partials/home-tab.html"
+        ></div>
         <!-- Start of "Individual" tab -->
         <div
           class="tab-pane fade"
           id="profile"
           role="tabpanel"
           aria-labelledby="profile-tab"
-        >
-          <style>
-            b {
-              font-weight: 700;
-            }
-          </style>
-
-          <p></p>
-          <h1>Individual Responses</h1>
-          <small
-            ><i>(<span id="ct"></span> answers)</i></small
-          >
-          <div>
-            <!-- Responses -->
-            <p></p>
-            <div class="col"></div>
-            <div class="col-11">
-              <table
-                id="resps"
-                class="table table-bordered table-striped mb-0"
-              ></table>
-
-              <!-- Individual Responses  -->
-            </div>
-            <p><b>End of Individual Answers:</b></p>
-          </div>
-        </div>
+          data-partial="partials/profile-tab.html"
+        ></div>
         <!-- start of About tab -->
         <div
           class="tab-pane fade"
           id="about"
           role="tabpanel"
           aria-labelledby="about-tab"
-        >
-          <div id="readme-content"></div>
-        </div>
+          data-partial="partials/about-tab.html"
+        ></div>
       </div>
     </div>
 
@@ -339,28 +136,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
     -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- -->
-    <script type="module">
-      async function load() {
-        try {
-          const resp = await fetch("./README.md");
-          const md = await resp.text();
-
-          document.getElementById("readme-content").innerHTML =
-            marked.parse(md);
-        } catch {
-          console.log("Crikey!");
-        }
-      }
-      load();
-    </script>
-
     <script type="text/javascript" src="Survey-feedback.js"></script>
     <script type="text/javascript" src="LCDC-questions.js"></script>
 
     <!-- Chart.js (global Chart for modules) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
 
-    <script type="module" src="js/index.js"></script>
+    <script type="module">
+      async function loadTabPartials() {
+        const containers = Array.from(
+          document.querySelectorAll("[data-partial]")
+        );
+        const loaders = containers.map(async (container) => {
+          const path = container.getAttribute("data-partial");
+          if (!path) {
+            return;
+          }
+          const resp = await fetch(path);
+          if (!resp.ok) {
+            throw new Error(`Failed to load ${path} (${resp.status})`);
+          }
+          container.innerHTML = await resp.text();
+        });
+        await Promise.all(loaders);
+      }
+
+      async function loadReadme() {
+        const target = document.getElementById("readme-content");
+        if (!target) {
+          return;
+        }
+        try {
+          const resp = await fetch("./README.md");
+          if (!resp.ok) {
+            throw new Error(`Failed to load README (${resp.status})`);
+          }
+          const md = await resp.text();
+          target.innerHTML = marked.parse(md);
+        } catch (err) {
+          console.error("Crikey! Failed to load README", err);
+        }
+      }
+
+      async function init() {
+        try {
+          await loadTabPartials();
+          await loadReadme();
+          await import("./js/index.js");
+        } catch (err) {
+          console.error("Initialization error", err);
+        }
+      }
+
+      init();
+    </script>
   </body>
 </html>
