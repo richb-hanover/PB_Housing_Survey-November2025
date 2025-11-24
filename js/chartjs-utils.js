@@ -38,6 +38,13 @@ export function makeChart(id, type, labels, data) {
     options: {
       responsive: true,
       plugins: {
+        title: {
+          display: true,
+          text: "Your Chart Title",
+          align: "center", // optional, default is center
+          font: { size: 18, weight: "bold" },
+          padding: 10,
+        },
         legend: {
           position: "right",
           align: "center",
