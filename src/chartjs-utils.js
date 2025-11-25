@@ -48,13 +48,6 @@ export function makeChart(id, type, labels, data, title) {
     options: {
       responsive: true,
       plugins: {
-        title: {
-          display: true,
-          text: title,
-          align: "center", // optional, default is center
-          font: { size: 18, weight: "bold" },
-          padding: 10,
-        },
         legend: {
           position: "right",
           align: "center",
@@ -76,11 +69,12 @@ export function makeChart(id, type, labels, data, title) {
         },
       },
       layout: {
-        padding: 10,
+        padding: 0,
       },
     },
   });
 }
+
 function sortLabelsAndData(labels, data) {
   return labels
     .map((label, i) => ({ label, value: data[i] }))

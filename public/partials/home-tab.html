@@ -1,23 +1,55 @@
-<p></p>
-<div>
+<style>
+  .survey-block {
+    margin: 1.5rem 0;
+  }
+
+  .survey-block > h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .survey-block > p {
+    margin-bottom: 0.5rem;
+  }
+
+  .survey-block__charts {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 0;
+  }
+
+  .survey-block__chart {
+    width: 750px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .survey-block__chart canvas {
+    width: 350px !important;
+    height: 350px !important;
+    max-width: 100%;
+  }
+</style>
+
+<div class="survey-block">
   <!-- #1 -->
   <h3 id="q1"></h3>
-  <!-- Question -->
   <p>
     <small
       ><i>(<span id="ct1"></span> answers)</i></small
     >
   </p>
-  <div class="col">&nbsp;</div>
-  <div class="col-10" style="width: 400px; height: 400px">
-    <canvas id="r1"></canvas>
-    <!-- Responses to Q1  -->
-  </div>
-  <div class="col">&nbsp;</div>
-</div>
 
+  <div class="survey-block__charts">
+    <div class="survey-block__chart">
+      <canvas id="r1"></canvas>
+    </div>
+  </div>
+</div>
+<!-- End of "multi-col" 2 -->
 <div>
-  <!-- #2 -->
+  <!-- Original #2 -->
   <h3 id="q2"></h3>
   <!-- Question -->
   <p>
