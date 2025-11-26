@@ -1,8 +1,7 @@
 export const questions = [
-  "Timestamp",
   "What is your preferred rate of growth?",
   "Should multi-unit dwellings be allowed as new construction?",
-  "What did you take away from the Forum/Video?",
+  "Should there be more attainable/affordable housing?",
   "What do you like about Lyme as it is today?",
   "What would you like to change about Lyme going forward?",
   "Are you satisfied with the value of the town's MUNICIPAL services (considering the balance between the service and its cost)?",

@@ -132,7 +132,7 @@ export function alphabetizeCounts(values) {
     frequency.set(value, (frequency.get(value) || 0) + 1);
   });
 
-  const sorted = Array.from(frequency.entries()).sort(([a], [b]) =>
+  const sorted = Array.from(frequency.entries()).sort(([b], [a]) =>
     a.localeCompare(b)
   );
   const labels = sorted.map(([label]) => label);
