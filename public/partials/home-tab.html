@@ -1,6 +1,7 @@
 <style>
   .survey-block {
     margin: 1.5rem 0;
+    border: 1px dotted orangered;
   }
 
   .survey-block > h3 {
@@ -65,6 +66,7 @@
   }
 </style>
 
+<!-- This section gets built automatically by makeAQuestion() in app.js -->
 <!-- Q1 -->
 <div class="survey-block">
   <!-- #1 -->
@@ -86,7 +88,7 @@
 </div>
 
 <!-- Q2 -->
-<div>
+<div class="survey-block">
   <!-- Original #2 -->
   <h3 id="q2"></h3>
   <!-- Question -->
@@ -121,7 +123,7 @@
 </div>
 
 <!-- Q3 -->
-<div>
+<div class="survey-block">
   <h3 id="q3"></h3>
   <!-- Question -->
   <p>
@@ -148,7 +150,7 @@
 </div>
 
 <!-- Question 4 -->
-<div>
+<div class="survey-block">
   <h3 id="q4"></h3>
   <p>
     <small
@@ -165,7 +167,7 @@
 </div>
 
 <!-- Question 5 -->
-<div>
+<div class="survey-block">
   <h3 id="q5"></h3>
   <p>
     <small
@@ -240,7 +242,7 @@
 </div>
 
 <!-- Question 6 -->
-<div>
+<div class="survey-block">
   <h3 id="q6"></h3>
   <p>
     <small
@@ -256,24 +258,24 @@
   </div>
 </div>
 
-<!-- Question 7 -->
-<div>
-  <h3 id="q7"></h3>
-  <!-- Question -->
+<!-- Question 7 
+<div class="survey-block">
+  <h3 id="q7a"></h3>
+  <!-- Question 
   <p>
     <small
-      ><i>(<span id="ct7"></span> responses)</i></small
+      ><i>(<span id="ct7a"></span> responses)</i></small
     >
   </p>
   <div class="col">&nbsp;</div>
   <div class="col-10">
-    <canvas id="r7" style="max-width: 500px"></canvas>
-    <!-- Responses to Q7  -->
+    <canvas id="r7a" style="max-width: 500px"></canvas>
+    <!-- Responses to Q7  
   </div>
   <div class="col">&nbsp;</div>
 </div>
-
-<div>
+-->
+<div class="survey-block">
   <h3 id="q8"></h3>
   <!-- Question -->
   <p>
@@ -289,7 +291,7 @@
   <div class="col">&nbsp;</div>
 </div>
 
-<div>
+<div class="survey-block">
   <h3 id="q9"></h3>
   <!-- Question -->
   <p>
@@ -305,7 +307,7 @@
   <div class="col">&nbsp;</div>
 </div>
 
-<div>
+<div class="survey-block">
   <h3 id="q10"></h3>
   <p>
     <small

@@ -1,5 +1,3 @@
-import Chart from "chart.js/auto";
-
 export const satisfactionLabels = [
   "<i>No entry</i>",
   "Very unsatisfied",

@@ -1,9 +1,27 @@
-// import Chart from "chart.js/auto";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  BarController,
+  BarElement,
+  PieController,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend,
+} from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 
-Chart.register(ArcElement, Tooltip, Legend);
-Chart.register(ChartDataLabels);
+ChartJS.register(
+  ArcElement,
+  BarController,
+  BarElement,
+  PieController,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend,
+  ChartDataLabels
+);
 
 // A stable 12-color palette (visually distinct, color-blind-friendly)
 const CHART_COLORS = [
@@ -26,6 +44,8 @@ export function makeChart(id, type, labels, data, title) {
   if (!canvas) {
     throw new Error(`Chart container "${id}" not found`);
   }
+  // default chart options
+  let chartType = type;
 
   // set the title above the chart
   const titleEl = document.getElementById(`${id}-title`);
@@ -33,8 +53,8 @@ export function makeChart(id, type, labels, data, title) {
     titleEl.textContent = title;
   }
 
-  new Chart(canvas, {
-    type,
+  new ChartJS(canvas, {
+    type: chartType,
     data: {
       labels: labels,
       datasets: [
