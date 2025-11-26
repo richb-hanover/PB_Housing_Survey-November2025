@@ -5,7 +5,6 @@
 import Chart from "chart.js/auto";
 import {
   tableize,
-  pieChart,
   barChart,
   formatIndividualResponse,
   summarizeResponseArray,
@@ -17,7 +16,7 @@ import { questions } from "./data/questions.js";
 /**
  * Beginning of main routine
  */
-console.log(`Chart version: ${Chart.version}`);
+// console.log(`Chart version: ${Chart.version}`);
 
 // copy the questions array to the respective <h3>'s
 let id = "";
@@ -32,7 +31,7 @@ let [labels, counts] = summarizeResponseArray(responses, "1. Rate of increase");
 // );
 
 makeChart("r1", "pie", labels, counts, "Rate of Growth");
-pieChart(responses, "View", ["2 new units/year", "No"], "2");
+// pieChart(responses, "View", ["2 new units/year", "No"], "2");
 barChart(
   responses,
   "Muni",

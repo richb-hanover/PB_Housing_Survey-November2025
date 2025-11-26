@@ -1,6 +1,8 @@
-import Chart from "chart.js/auto";
+// import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
+import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 
+Chart.register(ArcElement, Tooltip, Legend);
 Chart.register(ChartDataLabels);
 
 // A stable 12-color palette (visually distinct, color-blind-friendly)
@@ -28,6 +30,11 @@ export function makeChart(id, type, labels, data, title) {
     labels,
     data
   );
+  // set the title above the chart
+  const titleEl = document.getElementById(`${id}-title`);
+  if (titleEl && title) {
+    titleEl.textContent = title;
+  }
 
   new Chart(canvas, {
     type,
@@ -50,6 +57,11 @@ export function makeChart(id, type, labels, data, title) {
           labels: {
             boxWidth: 20,
           },
+        },
+        legendTitle: {
+          text: title,
+          font: "bold 18px sans-serif",
+          color: "#111",
         },
         datalabels: {
           color: "#fff",

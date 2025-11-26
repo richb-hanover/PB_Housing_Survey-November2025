@@ -27,11 +27,24 @@
     border: 1px solid blue;
   }
 
-  .survey-block__chart canvas {
+  .survey-block__chart-title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .survey-block__chart-canvas {
+    position: relative;
     width: 700px;
     height: 250px;
     max-width: 100%;
+    margin: 0 auto;
     border: 1px solid green;
+  }
+
+  .survey-block__chart-canvas canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
   }
 </style>
 
@@ -46,8 +59,10 @@
 
   <div class="survey-block__charts">
     <div class="survey-block__chart">
-      <div id="r1-title"></div>
-      <canvas id="r1"></canvas>
+      <div id="r1-title" class="survey-block__chart-title"></div>
+      <div class="survey-block__chart-canvas">
+        <canvas id="r1"></canvas>
+      </div>
     </div>
   </div>
 </div>
@@ -63,13 +78,19 @@
   </p>
   <div class="survey-block__charts">
     <div class="survey-block__chart">
-      <canvas id="r2a"></canvas>
+      <div class="survey-block__chart-canvas">
+        <canvas id="r2a"></canvas>
+      </div>
     </div>
     <div class="survey-block__chart">
-      <canvas id="r2b"></canvas>
+      <div class="survey-block__chart-canvas">
+        <canvas id="r2b"></canvas>
+      </div>
     </div>
     <div class="survey-block__chart">
-      <canvas id="r2c"></canvas>
+      <div class="survey-block__chart-canvas">
+        <canvas id="r2c"></canvas>
+      </div>
     </div>
   </div>
 </div>
