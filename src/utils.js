@@ -77,35 +77,35 @@ export function tableize(ary, prop, qID) {
 export function summarizeResponseArray(
   responses,
   heading,
-  checkboxes,
-  toStrip
+  type,
+  toStrip,
+  minCount,
+  sortBy
 ) {
   // console.log(
   //   `summarizeResponseArray: heading: ${heading} toStrip: "${toStrip}"`
   // );
-  const labels = cleanupLabels(responses, heading, checkboxes, toStrip);
+  const labels = cleanupLabels(responses, heading, type, toStrip);
   console.log(`Count of cleaned-up labels: ${labels.length}`);
-  return alphabetizeCounts(labels);
+  return alphabetizeCounts(labels, minCount, sortBy);
 }
 /**
  * cleanupLabels() - given the array of response objects,
  *    summarize the particular field's results and return
  *    two arrays: the labels, and the corresponding counts
  * @param array of responses
- * @param field - the property to examine
+ * @param heading - the property to examine
+ * @param type - If "checkboxes", split on ","
+ * @param toStrip - string to remove from labels
  * @returns array of labels
  */
 
-export function cleanupLabels(responses, heading, checkboxes, toStrip) {
+export function cleanupLabels(responses, heading, type, toStrip) {
   let labels = [];
-  // if (!Array.isArray(responses)) return[ [],[]];
-  if (heading == "7. Housing in Commercial") {
-    console.log("Question 7");
-  }
 
   let allResponses = [];
   responses.forEach((item) => {
-    if (checkboxes != "checkboxes") {
+    if (type != "checkboxes") {
       allResponses.push(item[heading]);
     } else {
       const pieces = item[heading].split(",");
@@ -113,43 +113,58 @@ export function cleanupLabels(responses, heading, checkboxes, toStrip) {
     }
   });
 
-  console.log(`allResponses: ${JSON.stringify(allResponses)}`);
+  // console.log(`allResponses: ${JSON.stringify(allResponses)}`);
   // allResponses is an array of the choices made by the user (as strings)
   allResponses.forEach((item) => {
-    let val = item.trim();
-    val = val.replace(toStrip, "");
-    labels.push(val);
+    let val = item.replace(toStrip, "");
+    val = val.trim();
+    if (val) {
+      labels.push(val);
+    }
   });
   // console.log(`cleaneduplabels: ${JSON.stringify(labels, null, 2)}`);
   return labels;
 }
 
 /**
- * alphabetizeCounts(values, trimString)
+ * alphabetizeCounts(values, minCount)
  * @param values string[]
- * @param string to trim
- * @returns [labels string[], counts number[]] sorted alphabetically by label plus
+ * @param minCount minimum count threshold to keep in main arrays
+ * @returns [labels string[], counts number[], other {label,count}[]]
  */
-export function alphabetizeCounts(values) {
-  // console.log(`alphabetize values: ${JSON.stringify(values)}`);
+export function alphabetizeCounts(values, minCount = 0, col = "label") {
   const frequency = new Map();
   values.forEach((value) => {
     frequency.set(value, (frequency.get(value) || 0) + 1);
   });
 
-  // console.log(`Unsorted results: ${JSON.stringify(frequency)}`);
-  const sorted = Array.from(frequency.entries()).sort(([b], [a]) =>
-    a.localeCompare(b)
-  );
-  const labels = sorted.map(([label]) => label);
-  // console.log(`labels after sorting: ${JSON.stringify(frequency)}`);
-  const counts = sorted.map(([, count]) => count);
+  const sorted = Array.from(frequency.entries());
+  sorted.sort((a, b) => {
+    if (col === "value") {
+      return b[1] - a[1];
+    }
+    return b[0].localeCompare(a[0]);
+  });
+
+  const labels = [];
+  const counts = [];
+  const other = [];
+
+  sorted.forEach(([label, count]) => {
+    if (count <= minCount) {
+      other.push(label);
+      return;
+    }
+    labels.push(label);
+    counts.push(count);
+  });
+
   console.log(
-    `Return from alphabetize:  ${JSON.stringify(labels)} ${JSON.stringify(
-      counts
-    )}`
+    `Return from alphabetize: labels=${JSON.stringify(
+      labels
+    )}\ncounts=${JSON.stringify(counts)} \nother=${JSON.stringify(other)}`
   );
-  return [labels, counts];
+  return [labels, counts, other];
 }
 
 /**

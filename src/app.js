@@ -72,12 +72,24 @@ function makeAQuestion(qNumber, qType, qCount) {
  * @param {*} type of chart ("pie", "bar")
  * @param {*} title shown above the chart
  */
-function makeAChart(responses, heading, div, type, title, toStrip) {
+
+function makeAChart(
+  responses,
+  heading,
+  div,
+  type,
+  title,
+  toStrip,
+  minCount,
+  sortBy
+) {
   let [labels, counts] = summarizeResponseArray(
     responses,
     heading,
     type,
-    toStrip
+    toStrip,
+    minCount,
+    sortBy
   );
   // console.log(`labels in makeAChart(): ${labels}, toStrip: ${toStrip}`);
   makeChart(div, type, labels, counts, title);
@@ -141,7 +153,9 @@ makeAChart(
   "r8",
   "checkboxes",
   "Districts for multi-unit",
-  ""
+  "District",
+  2,
+  "value"
 );
 
 /**
