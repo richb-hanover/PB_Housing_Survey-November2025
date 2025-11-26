@@ -47,13 +47,7 @@ export function makeChart(id, type, labels, data, title) {
   // default chart options
   let chartType = type;
 
-  // set the title above the chart
-  const titleEl = document.getElementById(`${id}-title`);
-  if (titleEl && title) {
-    titleEl.textContent = title;
-  }
-
-  new ChartJS(canvas, {
+  const options = {
     type: chartType,
     data: {
       labels: labels,
@@ -97,5 +91,18 @@ export function makeChart(id, type, labels, data, title) {
         padding: 0,
       },
     },
-  });
+  };
+
+  if (type == "checkboxes") {
+    options.type = "bar";
+    options.options.indexAxis = "y";
+  }
+  // set the title above the chart
+  const titleEl = document.getElementById(`${id}-title`);
+  if (titleEl && title) {
+    titleEl.textContent = title;
+  }
+
+  // console.log(`chart options: ${JSON.stringify(options)}`);
+  new ChartJS(canvas, options);
 }

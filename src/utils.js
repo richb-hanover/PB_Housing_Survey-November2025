@@ -1,11 +1,11 @@
-export const satisfactionLabels = [
-  "<i>No entry</i>",
-  "Very unsatisfied",
-  "Unsatisfied",
-  "Neutral",
-  "Satisfied",
-  "Very satisfied",
-];
+// export const xsatisfactionLabels = [
+//   "<i>No entry</i>",
+//   "Very unsatisfied",
+//   "Unsatisfied",
+//   "Neutral",
+//   "Satisfied",
+//   "Very satisfied",
+// ];
 
 /**
  * Javascript for the LCDC Questionnaire summary page
@@ -33,7 +33,7 @@ export function tablerow(accum, x) {
  * @returns void
  */
 export function tableize(ary, prop, qID) {
-  console.log(`tableize: ${prop} ${qID} ${JSON.stringify(ary[0])}`);
+  // console.log(`tableize: ${prop} ${qID} ${JSON.stringify(ary[0])}`);
   let theDom = "";
 
   // check for missing prop
@@ -67,90 +67,91 @@ export function tableize(ary, prop, qID) {
 }
 
 /**
- * summarizeResponseArray() - given the array of response objects,
+ * summarizeResponseArray()
+ * - isolate the heading prop from each response
+ * - split on "," if checkboxes
+ * - replace ${toStrip} with ""
+ * - Count the various occurrences
+ * - Return two arrays, labels & counts, sorted by labels
+ */
+export function summarizeResponseArray(
+  responses,
+  heading,
+  checkboxes,
+  toStrip
+) {
+  // console.log(
+  //   `summarizeResponseArray: heading: ${heading} toStrip: "${toStrip}"`
+  // );
+  const labels = cleanupLabels(responses, heading, checkboxes, toStrip);
+  console.log(`Count of cleaned-up labels: ${labels.length}`);
+  return alphabetizeCounts(labels);
+}
+/**
+ * cleanupLabels() - given the array of response objects,
  *    summarize the particular field's results and return
  *    two arrays: the labels, and the corresponding counts
  * @param array of responses
  * @param field - the property to examine
- * @returns array of labels, array of counts
+ * @returns array of labels
  */
 
-export function summarizeResponseArray(responses, field) {
+export function cleanupLabels(responses, heading, checkboxes, toStrip) {
   let labels = [];
   // if (!Array.isArray(responses)) return[ [],[]];
+  if (heading == "7. Housing in Commercial") {
+    console.log("Question 7");
+  }
 
+  let allResponses = [];
   responses.forEach((item) => {
-    // normalize missing/null/empty to "N/A"
-    let val; // val becomes the new prop
-    if (!item || !(field in item)) {
-      val = "N/A";
+    if (checkboxes != "checkboxes") {
+      allResponses.push(item[heading]);
     } else {
-      val = item[field];
-      if (val === null || val === "") {
-        val = "N/A";
-      } else if (typeof val === "string") {
-        val = val.trim();
-      }
+      const pieces = item[heading].split(",");
+      allResponses.push(...pieces);
     }
+  });
 
+  console.log(`allResponses: ${JSON.stringify(allResponses)}`);
+  // allResponses is an array of the choices made by the user (as strings)
+  allResponses.forEach((item) => {
+    let val = item.trim();
+    val = val.replace(toStrip, "");
     labels.push(val);
   });
-  return alphabetizeCounts(labels);
+  // console.log(`cleaneduplabels: ${JSON.stringify(labels, null, 2)}`);
+  return labels;
 }
 
 /**
- * uniqueLabelsAndCounts()
- * @param  values  - an array of strings
- * @returns [unique labels], [their counts]
- */
-// export function uniqueLabelsAndCounts(values) {
-//   const frequency = new Map();
-//   values.forEach((value) => {
-//     frequency.set(value, (frequency.get(value) || 0) + 1);
-//   });
-
-//   const uniques = [];
-//   const counts = [];
-//   frequency.forEach((count, value) => {
-//     uniques.push(value);
-//     counts.push(count);
-//   });
-
-//   return [uniques, counts];
-// }
-
-/**
- * alphabetizeCounts(values)
+ * alphabetizeCounts(values, trimString)
  * @param values string[]
+ * @param string to trim
  * @returns [labels string[], counts number[]] sorted alphabetically by label
  */
 export function alphabetizeCounts(values) {
+  // console.log(`alphabetize values: ${JSON.stringify(values)}`);
   const frequency = new Map();
   values.forEach((value) => {
     frequency.set(value, (frequency.get(value) || 0) + 1);
   });
 
+  // console.log(`Unsorted results: ${JSON.stringify(frequency)}`);
   const sorted = Array.from(frequency.entries()).sort(([b], [a]) =>
     a.localeCompare(b)
   );
   const labels = sorted.map(([label]) => label);
+  // console.log(`labels after sorting: ${JSON.stringify(frequency)}`);
   const counts = sorted.map(([, count]) => count);
+  console.log(
+    `Return from alphabetize:  ${JSON.stringify(labels)} ${JSON.stringify(
+      counts
+    )}`
+  );
   return [labels, counts];
 }
 
-// export function sortLabelsAndData(labels, data) {
-//   return labels
-//     .map((label, i) => ({ label, value: data[i] }))
-//     .sort((a, b) => a.label.localeCompare(b.label))
-//     .reduce(
-//       (acc, item) => {
-//         acc.labels.push(item.label);
-//         acc.data.push(item.value);
-//         return acc;
-//       },
-//       { labels: [], data: [] }
-//     );
-// }
 /**
  * countResponses
  * @param accum
