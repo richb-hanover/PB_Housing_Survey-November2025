@@ -26,10 +26,7 @@ export function makeChart(id, type, labels, data, title) {
   if (!canvas) {
     throw new Error(`Chart container "${id}" not found`);
   }
-  const { labels: sortedLabels, data: sortedData } = sortLabelsAndData(
-    labels,
-    data
-  );
+
   // set the title above the chart
   const titleEl = document.getElementById(`${id}-title`);
   if (titleEl && title) {
@@ -39,11 +36,11 @@ export function makeChart(id, type, labels, data, title) {
   new Chart(canvas, {
     type,
     data: {
-      labels: sortedLabels,
+      labels: labels,
       datasets: [
         {
-          data: sortedData,
-          backgroundColor: CHART_COLORS.slice(0, sortedLabels.length),
+          data: data,
+          backgroundColor: CHART_COLORS.slice(0, labels.length),
         },
       ],
     },
@@ -81,18 +78,4 @@ export function makeChart(id, type, labels, data, title) {
       },
     },
   });
-}
-
-function sortLabelsAndData(labels, data) {
-  return labels
-    .map((label, i) => ({ label, value: data[i] }))
-    .sort((a, b) => a.label.localeCompare(b.label))
-    .reduce(
-      (acc, item) => {
-        acc.labels.push(item.label);
-        acc.data.push(item.value);
-        return acc;
-      },
-      { labels: [], data: [] }
-    );
 }

@@ -97,7 +97,7 @@ export function summarizeResponseArray(responses, field) {
 
     labels.push(val);
   });
-  return uniqueLabelsAndCounts(labels);
+  return alphabetizeCounts(labels);
 }
 
 /**
@@ -105,22 +105,54 @@ export function summarizeResponseArray(responses, field) {
  * @param  values  - an array of strings
  * @returns [unique labels], [their counts]
  */
-export function uniqueLabelsAndCounts(values) {
+// export function uniqueLabelsAndCounts(values) {
+//   const frequency = new Map();
+//   values.forEach((value) => {
+//     frequency.set(value, (frequency.get(value) || 0) + 1);
+//   });
+
+//   const uniques = [];
+//   const counts = [];
+//   frequency.forEach((count, value) => {
+//     uniques.push(value);
+//     counts.push(count);
+//   });
+
+//   return [uniques, counts];
+// }
+
+/**
+ * alphabetizeCounts(values)
+ * @param values string[]
+ * @returns [labels string[], counts number[]] sorted alphabetically by label
+ */
+export function alphabetizeCounts(values) {
   const frequency = new Map();
   values.forEach((value) => {
     frequency.set(value, (frequency.get(value) || 0) + 1);
   });
 
-  const uniques = [];
-  const counts = [];
-  frequency.forEach((count, value) => {
-    uniques.push(value);
-    counts.push(count);
-  });
-
-  return [uniques, counts];
+  const sorted = Array.from(frequency.entries()).sort(([a], [b]) =>
+    a.localeCompare(b)
+  );
+  const labels = sorted.map(([label]) => label);
+  const counts = sorted.map(([, count]) => count);
+  return [labels, counts];
 }
 
+// export function sortLabelsAndData(labels, data) {
+//   return labels
+//     .map((label, i) => ({ label, value: data[i] }))
+//     .sort((a, b) => a.label.localeCompare(b.label))
+//     .reduce(
+//       (acc, item) => {
+//         acc.labels.push(item.label);
+//         acc.data.push(item.value);
+//         return acc;
+//       },
+//       { labels: [], data: [] }
+//     );
+// }
 /**
  * countResponses
  * @param accum
