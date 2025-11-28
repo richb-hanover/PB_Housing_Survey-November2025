@@ -395,7 +395,7 @@ export function formatIndividualResponse(resp: SurveyResponse): string {
     "7. Housing in Commercial",
   )}</dd>`;
   retstr += `<dt>Appropriate districts/locations for multi-unit housing:</dt>  
-    <dd> ${read("8. Multi-unit districs")}</dd>`;
+    <dd> ${read("8. Multi-unit districts")}</dd>`;
   retstr += `<b>Should school capacity in 2040 limit housing options?:</b> ${read(
     "10. Lyme School",
   )} <br />`;

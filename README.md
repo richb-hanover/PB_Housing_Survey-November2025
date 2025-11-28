@@ -30,21 +30,29 @@ Over the preceding year, the Planning Board created these questions.
 Rich Brown created a [Google form](https://docs.google.com/forms/d/14ZjxzLp04e7Q3lYHhlQvT7OjNpvrkJ5Ge19dYt-7xo4/edit) (requires authorization to access)
 to collect the information. 
 
-The data was exported as CSV from Google, then massaged to:
+The data was exported as CSV from Google:
 
-1. Add a column (becomes Column B) to hold the response number. Add "1" in the first row, and numbering each of the rows incrementally
-2. Use _src/data/headings.txt_ to replace the headings in the first line of the CSV file
-3. For the manually-entered data, remove the [###] from the final question.
-5. Convert the CSV to JSON using [http://www.convertcsv.com/csv-to-json.htm](http://www.convertcsv.com/csv-to-json.htm)
+1. Save the file in _public/Lyme PB Housing Survey-Nov2025.csv_ 
+2. Open in Excel
+3. Add a column (becomes Column B) to hold the response number. Add "1" in the first row, and numbering each of the rows incrementally
+4. Use _src/data/headings.txt_ to replace the headings in the first line of the CSV file
+5. Save the results back to _public/Lyme PB Housing Survey-Nov2025.csv_ 
+6. For the manually-entered data, remove the [###] from the final question.
+7. Convert the CSV to JSON using [http://www.convertcsv.com/csv-to-json.htm](http://www.convertcsv.com/csv-to-json.htm)
   - Select file to upload (copy/paste or use upload)
   - Input options - default (first row is column names)
   - Output options - default
   - Generate **CSV to JSON** (returns an array of JSON objects)
   - Copy/paste to _src/data/respones.js_
-6. Add `export const responses = ` and a final `;`
-   to convert to a valid Javascript statement
+8. Convert to a valid Javascript statement by adding
+   a final `;` and these lines to the beginning:
+ 
+  ```typescript
+  import { SurveyResponse } from "./responseTypes";
+  export const responses: SurveyResponse[] =... rest of the file...
+  ```
 
-Also create _src/data/questions.js_ with "printable" questions to be displayed for each response.
+9. Separately, create _src/data/questions.js_ with "printable" questions to be displayed for each response.
   It should have the form of a JSON array of strings:
 
    ```

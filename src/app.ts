@@ -81,7 +81,7 @@ makeAChart(
 makeAQuestion(8, "checkboxes", 1);
 makeAChart(
   responses,
-  "8. Multi-unit districs",
+  "8. Multi-unit districts",
   "r8-1",
   "checkboxes",
   "Districts for multi-unit",

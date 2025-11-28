@@ -20,7 +20,7 @@ export interface SurveyResponse {
   "5. Other": string;
   "6. Other explanation": string;
   "7. Housing in Commercial": string;
-  "8. Multi-unit districs": string;
+  "8. Multi-unit districts": string;
   "9. Infill": string;
   "10. Lyme School": string;
   "11. Lyme School Explanation": string;

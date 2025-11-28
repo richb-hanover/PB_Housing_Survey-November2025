@@ -107,12 +107,18 @@ export function makeAChart(
     minCount,
     sortBy,
   );
+  if (div === "r8-1") {
+    console.log(`working on q8`);
+    console.log(`labels: ${labels.length}`);
+  }
   makeChart(div, type, labels, counts, title);
+
   const otherResponses = filterResponsesByExclusions(
     responseSet,
     heading,
     labels,
   );
+
   if (type == "checkboxes") {
     const otherResponses = filterResponsesByExclusions(
       responseSet,

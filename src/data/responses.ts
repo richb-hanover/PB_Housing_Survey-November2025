@@ -23,7 +23,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "Rural District, East Lyme District",
+    "8. Multi-unit districts": "Rural District, East Lyme District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -62,7 +62,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -102,7 +102,7 @@ export const responses: SurveyResponse[] = [
       "Expand commercial disdrict north to Post Pond and encourage new businesses and housing",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, North of Post Pond",
+    "8. Multi-unit districts": "Lyme Common District, North of Post Pond",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -140,7 +140,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -179,7 +179,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -218,7 +218,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Commercial",
+    "8. Multi-unit districts": "Commercial",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -259,7 +259,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Center District, Rural District, East Lyme District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -299,7 +299,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District, Holts Ledge District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -338,7 +338,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -379,7 +379,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "East Lyme District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -422,7 +422,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Minimal or no housing, Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -461,7 +461,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "near existing development",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -499,7 +499,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "",
+    "8. Multi-unit districts": "",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -537,7 +537,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs": "Rural District",
+    "8. Multi-unit districts": "Rural District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -576,7 +576,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "Anywhere along NH-10.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -615,7 +615,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -654,7 +654,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Rural District, East Lyme District",
+    "8. Multi-unit districts": "Rural District, East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -692,7 +692,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Rural District, Holts Ledge District, Mountain and Forest District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
@@ -731,7 +731,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Wherever single-family dwellings are allowed",
     "9. Infill": "No",
     "10. Lyme School": "No",
@@ -770,7 +770,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -812,7 +812,7 @@ export const responses: SurveyResponse[] = [
       "Farms no longer in operation (such as across from school)",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District, Holts Ledge District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -853,7 +853,7 @@ export const responses: SurveyResponse[] = [
       "We need to stop over managing our development. Unfortunately the town of Lyme has fallen victim to people who purchase all the large tracts and immediately put it in conservation which makes it undevelopable. This not only restricts the availability of property, but the property that is available is severely overpriced. I don't see us ever being able to accommodate either accessible or affordable housing",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -897,7 +897,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -935,7 +935,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -972,7 +972,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "Rural District",
+    "8. Multi-unit districts": "Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -1011,7 +1011,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -1048,7 +1048,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -1087,7 +1087,7 @@ export const responses: SurveyResponse[] = [
       "Keeping the character of the Lyme Common as is, while allowing for more housing within walkable distance to the Common.  High Street, Market Street, and along Route 10 (Union Street, High Street, Orford Rd). Both the current school building location and the two large sand pits off of High Street would be ideal locations for more dense, attainable housing in the form of condos that would be walkable to the center of town.  A sidewalk loop up Dorchester Rd, down High Street, then closing the loop on Union Street would make everything very walkable.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "",
+    "8. Multi-unit districts": "",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -1129,7 +1129,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -1169,7 +1169,7 @@ export const responses: SurveyResponse[] = [
       "In the rural area immediately adjacent to the commercial district on Route 10 ",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Commercial district or immediately adjacent on route 10. ",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -1208,7 +1208,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Rural District, Mountain and Forest District",
+    "8. Multi-unit districts": "Rural District, Mountain and Forest District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -1249,7 +1249,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -1287,7 +1287,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -1328,7 +1328,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Minimal or no housing, Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -1369,7 +1369,7 @@ export const responses: SurveyResponse[] = [
       "Select roads: route 10 north to Orford, route 10 south to Hanover, east thetford road from town to the bridge to thetford. ",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, East Lyme District, Holts Ledge District, Commercial district and same answer as above along those select roads: route 10 north and south plus east thetford road ",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -1411,7 +1411,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Along Route 10 near existing businesses and services (Commercial District)",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -1454,7 +1454,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Commercial",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Commercial",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -1491,7 +1491,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "1-LEAST Appropriate",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -1531,7 +1531,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -1569,7 +1569,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -1607,7 +1607,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -1649,7 +1649,7 @@ export const responses: SurveyResponse[] = [
       "More zones along route 10 or expand the common zone to include more of route 10 for a larger downtown",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -1691,7 +1691,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Rural District, Commercial district",
+    "8. Multi-unit districts": "Rural District, Commercial district",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -1730,7 +1730,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -1772,7 +1772,7 @@ export const responses: SurveyResponse[] = [
       "The Loch Lyme lodge area/pinnacle corner seems like a good development hub ",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed, commercial district",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -1816,7 +1816,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       "I don't favor further housing development in the Commercial district, which is already quite full. I'm concerned about traffic impacts on Rt. 10, especially turning/entering onto what is effectively a 65 mph highway (people speed, you know it). Instead, housing should be in areas with already-quiet traffic. This may include the Rural District but thought must be given to impacts on agricultural and environmental concerns.",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Wherever single-family dwellings are allowed, See my comment above about placing housing in areas where traffic speeds are already quiet. We do NOT want to mix kids, dogs, and residents in general with 60mph traffic.",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -1858,7 +1858,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       "Anywhere along route 10 - larger, state maintained road, where infrastructure exists or is easier to modify ",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -1898,7 +1898,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District, across from post pond ",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -1939,7 +1939,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -1978,7 +1978,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2019,7 +2019,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2060,7 +2060,7 @@ export const responses: SurveyResponse[] = [
       "Along state highways. Route 10, East Thetford and Dorchester Rd",
     "7. Housing in Commercial":
       "Minimal or no housing, Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2102,7 +2102,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       "I do not support encouraging more building in Lyme. ",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2141,7 +2141,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -2180,7 +2180,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -2218,7 +2218,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "",
-    "8. Multi-unit districs": "",
+    "8. Multi-unit districts": "",
     "9. Infill": "",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -2257,7 +2257,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2300,7 +2300,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -2338,7 +2338,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Rural District",
+    "8. Multi-unit districts": "Lyme Common District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -2378,7 +2378,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       "Your zoning map is missing the land that is in Current Use. What areas are open for building? I need that infor before answering your question.",
     "7. Housing in Commercial": "",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Same as answer above. Show me the land that is available for building before asking me to answer this question.",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
@@ -2422,7 +2422,7 @@ export const responses: SurveyResponse[] = [
       "Along state highways such as Route 10, East Thetford Road, and Dorchester Road.",
     "7. Housing in Commercial":
       "Minimal or no housing, Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Same as Question 6.",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2466,7 +2466,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2507,7 +2507,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2549,7 +2549,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2590,7 +2590,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -2628,7 +2628,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -2668,7 +2668,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "Along all state highways in town.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Along all state highways in town.",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2709,7 +2709,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2749,7 +2749,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       'Wherever we could establish another walkable "village" in Lyme, with clustered housing and services',
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, In a new walkable village, away from 60-mph highways",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -2788,7 +2788,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs": "",
+    "8. Multi-unit districts": "",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2827,7 +2827,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2868,7 +2868,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Along route 10 (north and south of town) and East Thetford Rd.",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -2909,7 +2909,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Rural District",
+    "8. Multi-unit districts": "Lyme Common District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -2947,7 +2947,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -2989,7 +2989,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Commercial",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
@@ -3028,7 +3028,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -3067,7 +3067,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Rural District, East Lyme District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -3106,7 +3106,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -3147,7 +3147,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Rural District",
+    "8. Multi-unit districts": "Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -3187,7 +3187,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "Anywhere septic meets requirements for unit size.",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "",
@@ -3226,7 +3226,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3266,7 +3266,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -3307,7 +3307,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Center District, Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3346,7 +3346,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -3384,7 +3384,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -3421,7 +3421,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing, Single family home",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
@@ -3461,7 +3461,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3502,7 +3502,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3542,7 +3542,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3584,7 +3584,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Holts Ledge District, Commercial district",
+    "8. Multi-unit districts": "Holts Ledge District, Commercial district",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -3624,7 +3624,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3664,7 +3664,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -3703,7 +3703,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3744,7 +3744,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -3783,7 +3783,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Holts Ledge District",
+    "8. Multi-unit districts": "Lyme Common District, Holts Ledge District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -3824,7 +3824,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Nearby Thetford Bridge",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -3868,7 +3868,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Rural District",
+    "8. Multi-unit districts": "Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -3908,7 +3908,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -3944,7 +3944,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs": "Rural District",
+    "8. Multi-unit districts": "Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -3983,7 +3983,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -4024,7 +4024,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4067,7 +4067,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4108,7 +4108,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "along Rt 10",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -4147,7 +4147,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4186,7 +4186,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "",
+    "8. Multi-unit districts": "",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -4224,7 +4224,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Minimal or no housing, Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4264,7 +4264,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -4305,7 +4305,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4346,7 +4346,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -4386,7 +4386,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4428,7 +4428,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -4465,7 +4465,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Minimal or no housing, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -4504,7 +4504,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -4543,7 +4543,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       "Remove the guard rail and no parking signs at the skiway, encourage a Dartmouth to develop year round recreation, be nice to  Dartmouth ",
     "7. Housing in Commercial": "Single family home",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -4585,7 +4585,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "Along route 10",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Along route 10",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4624,7 +4624,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4664,7 +4664,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4703,7 +4703,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4741,7 +4741,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Lyme commercial",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -4783,7 +4783,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Center District",
+    "8. Multi-unit districts": "Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -4823,7 +4823,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "Anywhere along Route 10 South and North",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Anywhere on Route 10",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4866,7 +4866,7 @@ export const responses: SurveyResponse[] = [
       "Route 10 between Hanover and Lyme is a great place for more multi unit housing ",
     "7. Housing in Commercial":
       "7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Route 10",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4907,7 +4907,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -4946,7 +4946,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -4986,7 +4986,7 @@ export const responses: SurveyResponse[] = [
       "Along Route 10 is probably the best place for multi dwelling units. Other areas could support a duplex here and there or maybe even 1 building with 3-10 units, but I think there would be traffic and road maintenance problems on many town roads, if say, multiple apartment buildings  were allowed on most town roads.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5027,7 +5027,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -5067,7 +5067,7 @@ export const responses: SurveyResponse[] = [
       "In the rural district and commercial districts along rte 10 south from the Lyme School to the Hanover border.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -5107,7 +5107,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -5146,7 +5146,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Commercial District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Commercial District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -5189,7 +5189,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -5228,7 +5228,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -5267,7 +5267,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -5305,7 +5305,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Holts Ledge District",
+    "8. Multi-unit districts": "Holts Ledge District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -5346,7 +5346,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Rural District, Holts Ledge District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5387,7 +5387,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5428,7 +5428,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -5466,7 +5466,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -5504,7 +5504,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Minimal or no housing, Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5543,7 +5543,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5581,7 +5581,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Duplex (two family)",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -5619,7 +5619,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -5658,7 +5658,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "Route 10 south. ",
     "7. Housing in Commercial":
       "Minimal or no housing, 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "Expand the school. ",
@@ -5696,7 +5696,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Commercial District or anywhere along Route 10",
+    "8. Multi-unit districts": "Commercial District or anywhere along Route 10",
     "9. Infill": "No",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -5735,7 +5735,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -5773,7 +5773,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Rural District, Mountain and Forest District",
+    "8. Multi-unit districts": "Rural District, Mountain and Forest District",
     "9. Infill": "No",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -5813,7 +5813,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Center District, Rural District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -5856,7 +5856,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "along the state highways ",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Lyme Commercial district",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5897,7 +5897,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "On state roads",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Lyem Commercial",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -5936,7 +5936,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Wherever single-family dwellings are allowed",
+    "8. Multi-unit districts": "Wherever single-family dwellings are allowed",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -5974,7 +5974,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -6013,7 +6013,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -6052,7 +6052,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Holts Ledge District",
+    "8. Multi-unit districts": "Holts Ledge District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6091,7 +6091,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -6131,7 +6131,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Along River Road",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -6173,7 +6173,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District",
+    "8. Multi-unit districts": "Lyme Common District",
     "9. Infill": "No",
     "10. Lyme School": "No",
     "11. Lyme School Explanation":
@@ -6212,7 +6212,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "East Lyme District",
+    "8. Multi-unit districts": "East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -6249,7 +6249,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6289,7 +6289,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "East Lyme District",
+    "8. Multi-unit districts": "East Lyme District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6327,7 +6327,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6366,7 +6366,7 @@ export const responses: SurveyResponse[] = [
       "Along Rte 10 between Comercail District and the Common",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Commercial",
+    "8. Multi-unit districts": "Lyme Common District, Commercial",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation":
@@ -6407,7 +6407,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -6446,7 +6446,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6485,7 +6485,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6524,7 +6524,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6563,7 +6563,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Wherever single-family dwellings are allowed",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -6603,7 +6603,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
     "11. Lyme School Explanation": "",
@@ -6642,7 +6642,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Commercial District due to accessibility of services",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -6684,7 +6684,7 @@ export const responses: SurveyResponse[] = [
       "I made my choices based on where there currently is infrastructure to support easy access (i.e. paved roads). Development options in other areas are possible but should be more limited given the nature of the dirt roads/mud season.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Along paved roads in any district",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -6727,7 +6727,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Rural District, Mountain and Forest District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -6766,7 +6766,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6805,7 +6805,7 @@ export const responses: SurveyResponse[] = [
       "Any suitable lot/land/area that is accessible via paved roads. Police/FD access is hampered as the travel time on dirt roads increases. Dirt roads will also require more maintenance as the traffic flow increases. Services such as telecommunications/power/etc are more easily managed in close proximity to paved roads.",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District, Mountain and Forest District, Any suitable lot/land/area that is accessible via paved roads.",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -6847,7 +6847,7 @@ export const responses: SurveyResponse[] = [
     "5. Other": "",
     "6. Other explanation": "",
     "7. Housing in Commercial": "Single family home, Duplex (two family)",
-    "8. Multi-unit districs": "None of the above",
+    "8. Multi-unit districts": "None of the above",
     "9. Infill": "No",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -6886,7 +6886,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Along route 10 and in the center of town",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -6926,7 +6926,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Single family home, Duplex (two family), 3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
@@ -6967,7 +6967,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "3- 6 dwelling units in a building, 7-15 dwelling units in a building, 16-30 dwelling units in a building",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Commercial District (accessibility to services is paramount)",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
@@ -7011,7 +7011,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation": "",
     "7. Housing in Commercial":
       "Duplex (two family), 3- 6 dwelling units in a building",
-    "8. Multi-unit districs": "Lyme Common District, Lyme Center District",
+    "8. Multi-unit districts": "Lyme Common District, Lyme Center District",
     "9. Infill": "Yes",
     "10. Lyme School": "Yes",
     "11. Lyme School Explanation": "",
@@ -7051,7 +7051,7 @@ export const responses: SurveyResponse[] = [
     "6. Other explanation":
       "I would just like to add for the rural district that it be done thoughtfully, and ideally clustered around existing infrastructure rather than destroying active farmland or forests to build a single family home. ",
     "7. Housing in Commercial": "Minimal or no housing",
-    "8. Multi-unit districs":
+    "8. Multi-unit districts":
       "Lyme Common District, Lyme Center District, Rural District, East Lyme District, Holts Ledge District",
     "9. Infill": "Yes",
     "10. Lyme School": "No",
