@@ -2,7 +2,7 @@
  * Javascript for the LCDC Questionnaire summary page
  * Separating out utility functions
  */
-import type { SurveyResponse, ResponseStringKey } from "./data/responses";
+import type { SurveyResponse, ResponseStringKey } from "./data/responseTypes";
 import { makeChart, type ChartDisplayType } from "./chartjs-utils";
 
 const satisfactionLabels = [
@@ -40,7 +40,7 @@ export function tablerow(accum: string, x: string): string {
 export function tableize(
   responses: SurveyResponse[],
   prop: ResponseStringKey,
-  qID: string
+  qID: string,
 ): void {
   if (!responses.length) {
     return;
@@ -63,7 +63,7 @@ export function tableize(
         resp: entry.resp.replace(/\n/g, "<br />"),
       }))
       .map(
-        (entry) => `${entry.resp} <i>(Answer #${entry.item.toString()})</i>`
+        (entry) => `${entry.resp} <i>(Answer #${entry.item.toString()})</i>`,
       );
 
     const countEl = document.getElementById(`ct${qID}`);
@@ -74,7 +74,7 @@ export function tableize(
     markup = formattedResponses.reduce(tablerow, "");
   }
 
-  const tableEl = document.getElementById(`r${qID}`);
+  const tableEl = document.getElementById(`r${qID}-2`);
   if (tableEl) {
     tableEl.innerHTML = markup;
   }
@@ -94,8 +94,8 @@ export function summarizeResponseArray(
   type: ChartDisplayType,
   toStrip = "",
   minCount = 0,
-  sortBy: SortBy = "label"
-): [string[], number[], string[]] {
+  sortBy: SortBy = "label",
+): [string[], number[]] {
   const labels = cleanupLabels(responses, heading, type, toStrip);
   console.log(`Count of cleaned-up labels: ${labels.length}`);
   return alphabetizeCounts(labels, minCount, sortBy);
@@ -115,7 +115,7 @@ export function cleanupLabels(
   responses: SurveyResponse[],
   heading: ResponseStringKey,
   type: ChartDisplayType,
-  toStrip = ""
+  toStrip = "",
 ): string[] {
   const labels: string[] = [];
   const allResponses: string[] = [];
@@ -149,8 +149,8 @@ export function cleanupLabels(
 export function alphabetizeCounts(
   values: string[],
   minCount = 0,
-  col: SortBy = "label"
-): [string[], number[], string[]] {
+  col: SortBy = "label",
+): [string[], number[]] {
   const frequency = new Map<string, number>();
   values.forEach((value) => {
     frequency.set(value, (frequency.get(value) || 0) + 1);
@@ -166,24 +166,20 @@ export function alphabetizeCounts(
 
   const labels: string[] = [];
   const counts: number[] = [];
-  const other: string[] = [];
 
   sorted.forEach(([label, count]) => {
-    if (count <= minCount) {
-      other.push(label);
-      return;
+    if (count > minCount) {
+      labels.push(label);
+      counts.push(count);
     }
-    labels.push(label);
-    counts.push(count);
   });
 
   console.log(
-    `Return from alphabetize: Counts: ${labels.length} ${counts.length} ${other.length}\n
-      labels=${JSON.stringify(
-      labels
-    )}\ncounts=${JSON.stringify(counts)} \nother=${JSON.stringify(other)}`
+    `Return from alphabetize: Counts: ${labels.length} ${counts.length}\n
+      labels=${JSON.stringify(labels)}\n
+      counts=${JSON.stringify(counts)}`,
   );
-  return [labels, counts, other];
+  return [labels, counts];
 }
 
 /**
@@ -209,7 +205,7 @@ export function countResponses(accum: ResponseCount, x: string): ResponseCount {
 export function summarizeResponses(
   ary: SurveyResponse[],
   prop: ResponseStringKey,
-  labels: string[]
+  labels: string[],
 ): ResponseCount {
   const zeroAry: ResponseCount = {};
   labels.forEach((label) => {
@@ -303,7 +299,7 @@ export function barChart(
   prop: ResponseStringKey,
   textLabels: string[],
   qID: string,
-  label: string
+  label: string,
 ): void {
   const resps = summarizeResponses(ary, prop, textLabels);
   const labels = Object.keys(resps);
@@ -374,10 +370,10 @@ export function formatIndividualResponse(resp: SurveyResponse): string {
   retstr += `<br /> <br />`;
   retstr += `<dt>Kinds of new construction:</dt>  `;
   retstr += `<dd> Duplex: ${read("2. Duplexes")}; 3-6 units: ${read(
-    "2. 3-6 units"
+    "2. 3-6 units",
   )}; 7-15 units: ${read("2. 7 to 15 units")}</dd>`;
   retstr += `<b>Affordable</b> ${read("3. Affordable")} <b>Attainable:</b>  ${read(
-    "3. Attainable"
+    "3. Attainable",
   )}`;
   retstr += `<br /> `;
   retstr += `<b>Explanation:</b> ${read("4. Att-Aff Explanation")}	`;
@@ -396,17 +392,17 @@ export function formatIndividualResponse(resp: SurveyResponse): string {
       </ul>`;
   retstr += `<dt>Other locations:</dt> <dd>${read("6. Other explanation")}	</dd>`;
   retstr += `<dt>Housing in Commercial District:</dt>  <dd>${read(
-    "7. Housing in Commercial"
+    "7. Housing in Commercial",
   )}</dd>`;
   retstr += `<dt>Appropriate districts/locations for multi-unit housing:</dt>  
     <dd> ${read("8. Multi-unit districs")}</dd>`;
   retstr += `<b>Should school capacity in 2040 limit housing options?:</b> ${read(
-    "10. Lyme School"
+    "10. Lyme School",
   )} <br />`;
   retstr += `<b>Explanation:</b> ${read("11. Lyme School Explanation")}	`;
   retstr += `<br /><br />`;
   retstr += `<dt>Important Housing Initiatives:</dt>  <dd>${read(
-    "12. Housing initiatives"
+    "12. Housing initiatives",
   )}</dd>`;
   retstr += `<b>Plan to move in 5 years:</b> ${read("14. Plan to move")}	<br />`;
   retstr += `<b>Explanation:</b> ${read("15. Explanation of moving")}	`;

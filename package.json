@@ -9,6 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
+    "lint": "prettier --check . && eslint .",
     "alphabetize": "tsx scripts/alphabetizeCounts.test.ts"
   },
   "author": "Rich Brown <richb.hanover@gmail.com>",
@@ -16,9 +17,10 @@
   "devDependencies": {
     "@types/node": "^24.10.1",
     "cssnano": "^7.1.2",
+    "prettier": "^3.7.1",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
-    "vite": "^5.2.0"
+    "vite": "^7.2.4"
   },
   "dependencies": {
     "chart.js": "^4.5.1",

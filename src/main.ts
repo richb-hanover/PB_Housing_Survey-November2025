@@ -3,7 +3,7 @@ import readmeContent from "../README.md?raw";
 
 async function loadTabPartials(): Promise<void> {
   const containers = Array.from(
-    document.querySelectorAll<HTMLElement>("[data-partial]")
+    document.querySelectorAll<HTMLElement>("[data-partial]"),
   );
   const loaders = containers.map(async (container) => {
     const path = container.getAttribute("data-partial");

@@ -26,7 +26,7 @@ ChartJS.register(
   LinearScale,
   Tooltip,
   Legend,
-  ChartDataLabels
+  ChartDataLabels,
 );
 
 // A stable 12-color palette (visually distinct, color-blind-friendly)
@@ -50,7 +50,7 @@ export function makeChart(
   type: ChartDisplayType,
   labels: string[],
   data: number[],
-  title?: string
+  title?: string,
 ): void {
   const canvas = document.getElementById(id);
   if (!(canvas instanceof HTMLCanvasElement)) {
