@@ -46,6 +46,9 @@ export function tableize(
     return;
   }
 
+  console.log(
+    `tabelize ${rID}: count: ${responses.length} prop: "${prop}" ${JSON.stringify(responses[0])}`,
+  );
   let markup = "";
 
   if (responses[0][prop] === undefined) {

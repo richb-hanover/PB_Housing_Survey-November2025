@@ -110,38 +110,46 @@ export function makeAChart(
     minCount,
     sortBy,
   );
+  makeChart(div, type, labels, counts, title);
+
   if (div === "r8-1") {
     console.log(`working on q8`);
     console.log(`labels: ${labels.length}`);
   }
-  makeChart(div, type, labels, counts, title);
-
   const otherResponses = filterResponsesByExclusions(
     responseSet,
     heading,
     labels,
+    toStrip,
   );
   if (otherResponses.length > 0) {
     console.log(`otherResponses > 0: ${div} ${otherResponses.length} `);
+    console.log(`labels: ${labels}`);
     // append free-text responses to the question
     if (type === "checkboxes") {
       const tBlock = document.createElement("div");
       tBlock.innerHTML = surveyTextAnswers(`${div}t`); // creates "r#-#t"
       const existing = document.getElementById(div);
-      const parent = existing?.parentElement;
-      parent!.appendChild(tBlock);
+      const parent = existing?.parentElement?.parentElement;
+      try {
+        parent!.appendChild(tBlock);
+      } catch {
+        alert(`No parent for ${div}`);
+      }
     }
     tableize(otherResponses, heading, `${div}-2`);
   }
 }
 
 /**
- * Return responses whose string "prop" is not in the exclusion list.
+ * Return responses whose string "prop" is not in the exclusion list, after
+ * removing any optional substring provided via toStrip.
  */
 export function filterResponsesByExclusions(
   responses: SurveyResponse[],
   prop: ResponseStringKey,
   exclusions: string[],
+  toStrip = "",
 ): SurveyResponse[] {
   if (!responses.length) {
     return [];
@@ -161,6 +169,7 @@ export function filterResponsesByExclusions(
       const filteredValues = value
         .split(",")
         .map((item) => item.trim())
+        .map((item) => item.replace(toStrip, "").trim())
         .map((item) => item.replace(/\s*District$/i, "").trim())
         .filter((item) => item.length > 0 && !exclusionSet.has(item));
 
