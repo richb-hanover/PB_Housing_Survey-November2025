@@ -10,26 +10,19 @@ import { responses } from "./data/responses";
 
 // Question 1
 makeAQuestion(1, "chart", 1);
-makeAChart(
-  responses,
-  "1. Rate of increase",
-  "r1-1",
-  "pie",
-  "Rate of Growth",
-  "",
-);
+makeAChart(responses, 1, 1, "1. Rate of increase", "pie", "Rate of Growth", "");
 
 // Question 2
 makeAQuestion(2, "chart", 3);
-makeAChart(responses, "2. Duplexes", "r2-1", "pie", "Duplexes", "");
-makeAChart(responses, "2. 3-6 units", "r2-2", "pie", "3 to 6 Units", "");
-makeAChart(responses, "2. 7 to 15 units", "r2-3", "pie", "7 to 15 Units", "");
+makeAChart(responses, 2, 1, "2. Duplexes", "pie", "Duplexes", "");
+makeAChart(responses, 2, 2, "2. 3-6 units", "pie", "3 to 6 Units", "");
+makeAChart(responses, 2, 3, "2. 7 to 15 units", "pie", "7 to 15 Units", "");
 
 // Question 3
 
 makeAQuestion(3, "chart", 2);
-makeAChart(responses, "3. Attainable", "r3-1", "pie", "Attainable", "");
-makeAChart(responses, "3. Affordable", "r3-2", "pie", "Affordable", "");
+makeAChart(responses, 3, 1, "3. Attainable", "pie", "Attainable", "");
+makeAChart(responses, 3, 2, "3. Affordable", "pie", "Affordable", "");
 
 // Question 4
 makeAQuestion(4, "responses", 1);
@@ -37,28 +30,23 @@ tableize(responses, "4. Att-Aff Explanation", "r4");
 
 // Question 5
 makeAQuestion(5, "chart", 9);
-makeAChart(responses, "5. Lyme Common", "r5-1", "bar", "Lyme Common", "");
-makeAChart(responses, "5. Lyme Center", "r5-2", "bar", "Lyme Center", "");
-makeAChart(responses, "5. Commercial", "r5-3", "bar", "Commercial", "");
-makeAChart(responses, "5. Rural", "r5-4", "bar", "Rural", "");
-makeAChart(responses, "5. East Lyme", "r5-5", "bar", "East Lyme", "");
-makeAChart(responses, "5. Holts Ledge", "r5-6", "bar", "Holts Ledge", "");
+makeAChart(responses, 5, 1, "5. Lyme Common", "bar", "Lyme Common", "");
+makeAChart(responses, 5, 2, "5. Lyme Center", "bar", "Lyme Center", "");
+makeAChart(responses, 5, 3, "5. Commercial", "bar", "Commercial", "");
+makeAChart(responses, 5, 4, "5. Rural", "bar", "Rural", "");
+makeAChart(responses, 5, 5, "5. East Lyme", "bar", "East Lyme", "");
+makeAChart(responses, 5, 6, "5. Holts Ledge", "bar", "Holts Ledge", "");
+makeAChart(responses, 5, 7, "5. Mtn & Forest", "bar", "Mountain & Forest", "");
 makeAChart(
   responses,
-  "5. Mtn & Forest",
-  "r5-7",
-  "bar",
-  "Mountain & Forest",
-  "",
-);
-makeAChart(
-  responses,
+  5,
+  8,
   "5. Wherever SF units",
-  "r5-8",
+
   "bar",
   "Where single family allowed",
 );
-makeAChart(responses, "5. Nowhere", "r5-9", "bar", "Nowhere", "");
+makeAChart(responses, 5, 9, "5. Nowhere", "bar", "Nowhere", "");
 
 // Question 6
 makeAQuestion(6, "responses", 1);
@@ -68,8 +56,9 @@ tableize(responses, "6. Other explanation", "r6");
 makeAQuestion(7, "checkboxes", 1);
 makeAChart(
   responses,
+  7,
+  1,
   "7. Housing in Commercial",
-  "r7-1",
   "checkboxes",
   "Commercial District housing types",
   "in a building",
@@ -81,8 +70,9 @@ makeAChart(
 makeAQuestion(8, "checkboxes", 1);
 makeAChart(
   responses,
+  8,
+  1,
   "8. Multi-unit districts",
-  "r8-1",
   "checkboxes",
   "Districts for multi-unit",
   "District",
@@ -94,8 +84,9 @@ makeAChart(
 makeAQuestion(9, "chart", 1);
 makeAChart(
   responses,
+  9,
+  1,
   "9. Infill",
-  "r9-1",
   "pie",
   "Should infill have as many as four units?",
   "",
@@ -107,8 +98,9 @@ makeAChart(
 makeAQuestion(10, "chart", 1);
 makeAChart(
   responses,
+  10,
+  1,
   "10. Lyme School",
-  "r10-1",
   "pie",
   "School growth should limit housing choices",
   "",
@@ -124,8 +116,9 @@ tableize(responses, "11. Lyme School Explanation", "r11");
 makeAQuestion(12, "checkboxes", 1);
 makeAChart(
   responses,
+  12,
+  1,
   "12. Housing initiatives",
-  "r12-1",
   "checkboxes",
   "Housing initiatives",
   "",
@@ -137,8 +130,9 @@ makeAChart(
 makeAQuestion(13, "chart", 1);
 makeAChart(
   responses,
+  13,
+  1,
   "13. Years in Lyme",
-  "r13-1",
   "pie",
   "Years in Lyme",
   "",
@@ -151,8 +145,9 @@ makeAChart(
 makeAQuestion(14, "chart", 1);
 makeAChart(
   responses,
+  14,
+  1,
   "14. Plan to move",
-  "r14-1",
   "pie",
   "Plan to move in 5 years",
   "",
@@ -170,8 +165,9 @@ tableize(responses, "15. Explanation of moving", "r15");
 makeAQuestion(16, "chart", 1);
 makeAChart(
   responses,
+  16,
+  1,
   "16. Age range",
-  "r16-1",
   "pie",
   "Current age",
   "",
@@ -184,8 +180,9 @@ makeAChart(
 makeAQuestion(17, "chart", 1);
 makeAChart(
   responses,
+  17,
+  1,
   "17. Smaller house",
-  "r17-1",
   "pie",
   "Smaller house",
   "",
@@ -203,8 +200,9 @@ tableize(responses, "18. Smaller house explanation", "r18");
 makeAQuestion(19, "chart", 1);
 makeAChart(
   responses,
+  19,
+  1,
   "19. Currently own",
-  "r19-1",
   "pie",
   "Currently own a house",
   "",

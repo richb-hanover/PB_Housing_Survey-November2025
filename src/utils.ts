@@ -5,14 +5,14 @@
 import type { SurveyResponse, ResponseStringKey } from "./data/responseTypes";
 import { makeChart, type ChartDisplayType } from "./chartjs-utils";
 
-const satisfactionLabels = [
-  "<i>No entry</i>",
-  "Very unsatisfied",
-  "Unsatisfied",
-  "Neutral",
-  "Satisfied",
-  "Very satisfied",
-] as const;
+// const satisfactionLabels = [
+//   "<i>No entry</i>",
+//   "Very unsatisfied",
+//   "Unsatisfied",
+//   "Neutral",
+//   "Satisfied",
+//   "Very satisfied",
+// ] as const;
 
 export type SortBy = "label" | "value";
 type ResponseCount = Record<string, number>;

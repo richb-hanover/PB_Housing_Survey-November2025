@@ -23,7 +23,7 @@ export function makeAQuestion(
   qType: QuestionType,
   qCount: number,
 ) {
-  console.log(`makeAQuestion: #${qNumber} ${qType} count: ${qCount}`);
+  console.log(`makeAQuestion: ${qNumber} ${qType} count: ${qCount}`);
   const listOfResponses = `
     <h3 id="q${qNumber}"></h3>
     <p><small><i>(<span id="ct${qNumber}"></span> responses)</i></small></p>
@@ -38,12 +38,12 @@ export function makeAQuestion(
     <div class="survey-block__charts"></div>
     `;
 
-  const surveyBlockChart = (subq: number) => `
+  const surveyBlockChart = (chartID: string) => `
     <div class="survey-block__chart">
-      <div id="r${qNumber}-${subq}-title" class="survey-block__chart-title"></div>
+      <div id="r${chartID}-title" class="survey-block__chart-title"></div>
 
       <div class="survey-block__chart-canvas">
-        <canvas id="r${qNumber}-${subq}"></canvas>
+        <canvas id="r${chartID}"></canvas>
       </div>
     </div>
     `;
@@ -55,16 +55,22 @@ export function makeAQuestion(
   if (!home) {
     throw new Error("Home container not found");
   }
+  // add the question body to the page
   const block = document.createElement("div");
   block.className = "survey-block";
   block.id = `r${qNumber}`;
   block.innerHTML = replacementHTML;
   home.appendChild(block);
+  // create all the charts needed
   const chartContainer = block.querySelector(".survey-block__charts");
   if ((qType === "chart" || qType === "checkboxes") && qCount > 0) {
     if (chartContainer) {
       for (let idx = 1; idx <= qCount; idx += 1) {
-        chartContainer.insertAdjacentHTML("beforeend", surveyBlockChart(idx));
+        const chartID = `${qNumber}-${idx}`;
+        chartContainer.insertAdjacentHTML(
+          "beforeend",
+          surveyBlockChart(chartID),
+        );
       }
     }
   }
@@ -89,8 +95,9 @@ export function makeAQuestion(
 
 export function makeAChart(
   responseSet: SurveyResponse[],
+  rNumber: number,
+  rSub: number,
   heading: ResponseStringKey,
-  div: string, // "r##-#"
   type: ChartDisplayType,
   title: string,
   toStrip = "",
@@ -113,8 +120,21 @@ export function makeAChart(
     minCount,
     sortBy,
   );
+  const div = `r${rNumber}-${rSub}`;
   makeChart(div, type, labels, counts, title);
 
+  const ctDiv = `ct${rNumber}`;
+  // if this is the first question, fill in the count
+  if (rSub === 1) {
+    const countEl = document.getElementById(ctDiv);
+    const totalCounts = counts.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0,
+    );
+    if (countEl) {
+      countEl.innerHTML = String(totalCounts);
+    }
+  }
   if (div === "r8-1") {
     console.log(`working on q8`);
     console.log(`labels: ${labels.length}`);
