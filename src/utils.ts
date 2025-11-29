@@ -45,9 +45,9 @@ export function tableize(
   if (!responses.length) {
     return;
   }
-
+  const ctDiv = `${rID}ct`;
   console.log(
-    `tableize ${rID}: count: ${responses.length} prop: "${prop}" ${JSON.stringify(responses[0])}`,
+    `tableize ${rID}: ct: ${ctDiv} count: ${responses.length} prop: "${prop}" `,
   );
   let markup = "";
 
@@ -69,10 +69,12 @@ export function tableize(
         (entry) => `${entry.resp} <i>(Answer #${entry.item.toString()})</i>`,
       );
 
-    console.log(`tabelize of count: ${rID}, "${rID}ct"`);
-    const countEl = document.getElementById(`${rID}ct`);
+    console.log(`tableizing count: ${ctDiv}`);
+    const countEl = document.getElementById(ctDiv);
     if (countEl) {
       countEl.textContent = formattedResponses.length.toString();
+    } else {
+      throw `No countEl - ${ctDiv}`;
     }
 
     markup = formattedResponses.reduce(tablerow, "");

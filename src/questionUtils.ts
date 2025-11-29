@@ -106,13 +106,14 @@ export function makeAChart(
   minCount = 0,
   sortBy: SortBy = "label",
 ) {
-  const surveyTextAnswers = (rID: string) =>
-    `<h5>Other responses to this question:</h5> <br /> 
-      <p><small><i>(<span id="{rID}-ct"></span> responses)</i></small></p>
+  const surveyTextAnswers = (rID: string) => {
+    return `<h5>Other responses to this question:</h5> <br /> 
+      <p><small><i>(<span id=${rID}ct></span> responses)</i></small></p>
 
     <div class="col-10 table-wrapper-scroll-y my-custom-scrollbar">
-      <table id="${rID}" class="table table-bordered table-striped mb-0"></table>
+      <table id=${rID}t class="table table-bordered table-striped mb-0"></table>
     </div>`;
+  };
 
   const [labels, counts] = summarizeResponseArray(
     responseSet,
@@ -162,9 +163,10 @@ export function makeAChart(
     console.log(`otherResponses > 0: ${div} ${otherResponses.length} `);
     console.log(`labels: ${labels}`);
     // append free-text responses to the question
+    const textDiv = `r${rNumber}-${rSub}`;
     if (type === "checkboxes") {
       const tBlock = document.createElement("div");
-      tBlock.innerHTML = surveyTextAnswers(`${div}t`); // creates "r#-#t"
+      tBlock.innerHTML = surveyTextAnswers(textDiv); // creates "r#t"
       const existing = document.getElementById(div);
       const parent =
         existing?.parentElement?.parentElement?.parentElement?.parentElement;
@@ -174,7 +176,8 @@ export function makeAChart(
         alert(`No parent for ${div}`);
       }
     }
-    tableize(otherResponses, heading, `${div}`);
+    console.log(`calling tableize: ${textDiv}`);
+    tableize(otherResponses, heading, textDiv);
   }
 }
 
