@@ -57,6 +57,7 @@ export function makeChart(
     throw new Error(`Chart container "${id}" not found`);
   }
   const resolvedType: ChartType = type === "checkboxes" ? "bar" : type;
+  const isPie = resolvedType === "pie";
 
   const config: ChartConfiguration<ChartType, number[], string> = {
     type: resolvedType,
@@ -81,8 +82,18 @@ export function makeChart(
           },
         },
         datalabels: {
-          color: "#fff",
+          color: isPie ? "#222" : "#fff",
           font: { weight: "bold" },
+          anchor: isPie ? "end" : "center",
+          align: isPie ? "end" : "center",
+          offset: isPie ? 6 : 0,
+          clamp: isPie,
+          clip: !isPie,
+          display: (ctx: DataLabelsContext) => {
+            const dataset = ctx.chart.data.datasets[ctx.datasetIndex];
+            const value = (dataset?.data?.[ctx.dataIndex] as number) ?? 0;
+            return value > 0;
+          },
           formatter: (value: number, ctx: DataLabelsContext) => {
             const dataset = ctx.chart.data.datasets[0];
             const points = (dataset?.data as number[]) ?? [];
